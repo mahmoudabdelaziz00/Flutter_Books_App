@@ -1,3 +1,4 @@
+import 'package:books_app/Features/home/presentation/views/widgets/book_action.dart';
 import 'package:books_app/Features/home/presentation/views/widgets/book_rating.dart';
 import 'package:books_app/Features/home/presentation/views/widgets/custom_book_details_app_bar.dart';
 import 'package:books_app/Features/home/presentation/views/widgets/custom_book_image_item.dart';
@@ -19,7 +20,7 @@ class BookDetailsViewBody extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: width * 0.2),
             child: CustomBookImageItem(),
           ),
-          SizedBox(height: 40,),
+          SizedBox(height: 30,),
           Text(
             'The Jungle Book',
             style: Style.textStyle30.copyWith(
@@ -37,10 +38,12 @@ class BookDetailsViewBody extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 18,),
+          SizedBox(height: 10,),
           BookRating(
             mainAxisAlignment: MainAxisAlignment.center,
           ),
+          SizedBox(height: 20,),
+          BookAction(),
         ],
       ),
     );
