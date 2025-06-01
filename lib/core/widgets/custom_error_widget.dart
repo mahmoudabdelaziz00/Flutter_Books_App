@@ -8,6 +8,6 @@ class CustomErrorWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(errorMsg, style: Style.textStyle18);
+    return Center(child: Text(errorMsg, style: Style.textStyle18));
   }
 }
